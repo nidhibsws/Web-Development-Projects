@@ -1,0 +1,24 @@
+*{
+    
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(images/pic2.png);
+        font-size: xx-large;
+        color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+        
+          
+}
+
+h2{
+    display: block;
+  color: rgb(202, 24, 24);
+  font-size: xx-large;
+  text-decoration: underline;
+  
+}
+@media only screen and (max-width:770px) {
+
+
+}
+    

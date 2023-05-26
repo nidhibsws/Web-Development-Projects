@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    height: 100vh;
+    max-width:100%;
+    background-size: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/firstpic.png) ;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navi{
+    flex: 1;
+    text-align:right;
+    background-color: #261e4f;
+   
+    position:fixed;
+        
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+
+.navi ul li{
+    
+    display:inline-block;
+    padding: 8px 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+.navi ul li a{
+    background-color: #000000;
+    color: rgb(100, 174, 223);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navi ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.navi ul li:hover::after{
+    width:100%;
+}
+
+.title{
+    width:90%;
+    color: rgb(145, 172, 215);
+    border: #000000;
+    padding: 20%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+
+}  
+.title h1{
+   
+    font-size: 100px;
+    text-decoration: overline;
+    padding:auto;
+    text-align: center;
+    font-weight:900;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.title p{
+    margin: 10px 0 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15%;
+    font-size: 40px;
+    color: rgb(85, 131, 148);
+    
+}
+
+
+
+
+
+    
+    
+
+
+.details{
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(images/IMG.png);
+
+    
+}
+
+.info{
+    width:100%;
+    
+
+
+}
+
+
+
+
+.pic2{
+    width: 100%;
+    
+}
+
+.info h2 {
+    display: grid;
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: rgb(227, 244, 239);
+    line-height: 80px;
+    margin:10px 0 30px;
+}
+.info p {
+    padding: 0px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#ffffff;
+    line-height: 24px;
+    
+    
+
+}
+
+
+
+@media only screen and (max-width:770px) {
+    .header{
+        display: block;
+    }
+    
+
+    .navi ul li{
+        display: block;
+    }
+
+
+       
+        
+
+    .photo{
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+}
+.info h2 {
+    display: flex;
+    padding: 30px 30px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(189, 187, 215);
+    line-height: 20px;
+    margin:10px 0 30px;
+    
+}
+.info p {
+    padding: 0px 30px 20px;
+    font-family:cursive;
+    align-items:center;
+    color: rgb(248, 224, 224);
+    line-height: 22px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.pic2{
+    width: 100%;
+    align-items: stretch;
+
+}
+
+}
+

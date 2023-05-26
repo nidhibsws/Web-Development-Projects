@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <link rel="stylesheet" href="lab04.css"/>
+</head>
+<body> 
+    
+<div
+ class="registrationform">
+<h1> Registration form:</h1>
+</div>
+
+
+
+<div class="forms">
+   
+
+ <div id="names">
+    <script>
+        function onlyletters() 
+    {
+                var char = event.keyCode;
+    
+                if ((char > 64 && char < 91) || (char > 96 && char < 123) || char == 8)
+    
+                    return true;
+                else
+                    return false;
+    }
+     </script>
+
+
+    
+    <h2 class="names">Name</h2>
+
+    <input id="FirstName" type="text" 
+    name="first_name" onkeypress="return onlyletters(event)"><br>
+   
+    <label class="firstlabel">First Name</label>
+     
+    <input id="LastName"
+    type="text" 
+    name="last_name"onkeypress="return onlyletters(event)">
+
+    <label class="lastlabel">Last Name</label>
+</div>
+ 
+
+
+
+<h2 class="names">Address</h2>
+
+    <input id="address" 
+     type="text" 
+     name="Address" />
+ 
+
+
+
+     <script>
+
+        function formatPhoneNum(v){
+         if (!v) return v; 
+         const phoneNum=v.replace(/[^\d]/g, '');
+         const phoneNumLength = phoneNum.length;
+         if (phoneNumLength < 4) 
+              return phoneNum;
+         if (phoneNumLength < 7){
+            return `(${phoneNum.slice(0,3)})-${phoneNum.slice(3)}`;
+         }
+         return `(${phoneNum.slice(0,3)})-${phoneNum.slice(
+            3,
+            6,
+
+         )}-${phoneNum.slice(6,9)}`;
+         }
+
+        
+    
+        function phoneNumberFormatter(){
+            const inputf=document.getElementById('phone-number');
+            const formatinputv = formatPhoneNum(inputf.value);
+            inputf.value=formatinputv;
+
+
+        }
+       
+     </script>
+
+
+<center>
+
+<h2 class="names">Phone Number</h2>
+<br>
+     <input onkeydown="phoneNumberFormatter()" id="phone-number" maxlength="16" >
+
+
+</center>
+
+</div>
+<center>
+    
+   
+ <br>
+<p class="how">
+ How did you hear about us? </p>
+ 
+ 
+
+<div style="margin: auto 1rem;">
+    <textarea id="readchar"
+            name="readchar"
+            rows="4"
+            cols="43"
+            placeholder="Leave a Message" 
+            onkeyup="updatingCount(this)"></textarea>
+</div>
+<div class="counttt">
+    <p>number of characters: <span id="charcount"></span></p>
+    <p>letter Count: <span id="alpha-charcount"></span></p>
+</div>
+
+<script>
+
+function updatingCount(textareaEl) {
+    let textLength = textareaEl.value.length;
+    document.getElementById('charcount').textContent = textLength;
+
+
+    let txtLength = textareaEl.value.replace(/[^a-zA-Z]/g,'').length;
+    document.getElementById('alpha-charcount').textContent = txtLength;
+}
+
+
+</script>
+
+
+
+
+
+<button class="button">
+
+<tr id="btnn">
+    <td colspan="2"><input type="button" name="button" id="btn" value="Register" onclick="AddRow()"></td>
+</tr>
+</button>
+
+<table border="1" id="viewing">
+
+<thread>
+<tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>address</th>
+    <th>Phone number</th>
+</tr>
+</thread>
+
+</table>
+
+<script>
+    var fname = [];
+    var lname = [];
+    var addr = [];
+    var phonenum = [];
+
+    var n = 1;
+    var x = 0;
+
+    function AddRow(){
+
+var AddRown = document.getElementById('viewing');
+var NewRow = AddRown.insertRow(n);
+
+fname[x] = document.getElementById("FirstName").value;
+lname[x] = document.getElementById("LastName").value;
+addr[x] = document.getElementById("address").value;
+phonenum[x] = document.getElementById("phone-number").value;
+
+var cellfname = NewRow.insertCell(0);
+var celllname = NewRow.insertCell(1);
+var celladdr = NewRow.insertCell(2);
+var cellphnnum = NewRow.insertCell(3);
+
+cellfname.innerHTML = fname[x];
+celllname.innerHTML = lname[x];
+celladdr.innerHTML = addr[x];
+cellphnnum.innerHTML = phonenum[x];
+
+n++;
+x++;
+}
+
+</script>
+
+    </form>
+
+<br>
+<br><br>
+<div class="bookmarks">
+    <h3> my favourite sites:</h3>
+
+    <li><button onclick="visitsite(this)" 
+    value="https://ca.shein.com/">Shein<img src="iconGreen.png" alt="safe" width="20"><button></li>
+    
+    <li><button onclick="visitsite(this)" value="http://go.com/">Go
+<img src="greypadlock.png" alt="unsafe" width="20"></button></li>
+
+  <script>
+
+    function visitsite(link){
+        console.log(link.value);
+        window.open(link.value);
+    };
+  </script>
+ </div>
+
+</center> 
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

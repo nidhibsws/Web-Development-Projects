@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10b - Nidhi Biswas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script>
+        function OnClickPython()
+        {
+            document.Form.action ="https://www2.scs.ryerson.ca/~n6biswas/cgi-bin/lab10p.cgi";
+            document.Form.submit();
+            return true;
+        }
+
+        function OnClickRuby() {
+            document.Form.action ="https://www2.scs.ryerson.ca/~n6biswas/cgi-bin/lab10r.cgi";
+            document.Form.submit();
+            return true;
+        }
+    </script>
+
+
+</head>
+
+
+
+<body>
+    <style>
+
+       h1{
+           font-family: 'calibri';
+           font-size: xxx-large;
+           color: rgb(0, 0, 0);
+           background-color: #9fc99f;
+           border : 2px solid rgb(0, 0, 0) ; 
+        }
+
+        body {
+            background-size: 100%;
+        background-color: #52ACFF;
+        background-repeat: no-repeat;
+background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family:'Times New Roman', Times, serif;
+        justify-content: center;
+        text-align: center;
+        
+        }
+        .submit_btns input {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 2px border black;
+        border-radius: 4px;
+        display: block;
+        font-size: 16px;
+        padding: 40px;
+        height: 0%;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        input {
+            background-color: #d75fd5;
+            border: 2px solid black;
+            color: rgb(255, 255, 255);
+            border-radius: 3px;
+            display: block;
+            font-size: 15px;
+            padding: 20px;
+            margin: 0 ;
+            width: 100%;
+        }
+        .submit_btns {
+            display: flex;
+        }
+        .cgi_rb_btn {
+            margin-left: 5em;
+        }
+        .cgi_rb_btn input {
+            background-color:blueviolet;
+
+        }
+        .form-control {
+            color: #ad6969;
+        }
+        ::placeholder{
+            color : black; 
+        }
+        .cgi_py_btn input {
+            background-color: #f5e610;
+        }
+
+
+    </style>
+
+    <div>
+        <h1>Lab 10b Nidhi Biswas</h1>
+        <form method="POST" name="Form" class="full_form">
+            <div class="form">
+                <div class="coll">
+                    <label for="cityname" class="formm">City</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a City name "
+                    name="cityname"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+                <div class="coll">
+                    <label for="provincestate" class="formm"
+                    >Province or State</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a Province or State"
+                    name="provincestate"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+            <div class="coll">
+                <div class="coll">
+                    <label for="countryname" class="formm">Country</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a Country"
+                    name="countryname"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+                <div class="coll">
+                    <label for="photourl" class="formm"
+                    >Photo URL</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a picture URL"
+                    name="photourl"
+                    required
+                    />
+                </div>
+            </div>
+            <br> <br> <br>
+            <div class="submit_btns">
+                <div class="cgi_py_btn">
+                    <label>Python result:</label>
+                    <input
+                    type="button"
+                    value="Submit"
+                    class="btn btn-success"
+                    onclick="return OnClickPython();"
+                    />
+                </div>
+                <div class="cgi_rb_btn">
+                    <label>Ruby result:</label>
+                    <input
+                    type="button"
+                    value="Submit"
+                    class="btn btn-primary "
+                    onclick="return OnClickRuby();"
+                    />
+                </div>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

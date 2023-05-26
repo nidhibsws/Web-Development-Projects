@@ -1,0 +1,140 @@
+
+
+.header{
+    font-size:100%;
+    font-family:monospace;
+    background-image: linear-gradient(141deg, #386c40 0%, #1fc8db 51%, #73cb10 75%);
+    font: 100%; 
+    color:rgb(0, 0, 0);
+    border: 4px solid #ffffffcc;
+    border-radius: 50px;
+    padding: 30px ;
+    text-align: center;
+    
+
+}
+
+.author{
+    border: 2px;
+    border-radius: 80px;
+    font-family: cursive;
+    background-color: #d1e2eb;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.container-fluid {
+    flex-direction: column;
+    background-image: linear-gradient(141deg, #a52291 0%, #1fc8db 51%, #e08b8b 75%);
+    display: flex;
+    align-items: center;
+    min-height: 100;
+    max-width: 100%;
+    
+   
+}
+
+.container-fluid .parts {
+    position: relative;
+    border: ridge; 
+    border-radius: 20%;
+    border-color: #fbf9fb;
+    border-style:groove;
+    width: 250px;
+}
+.container-fluid .parts:hover {
+   
+    background-color: #98ce56;
+
+}
+
+.container .parts img {
+    position: absolute;
+    padding: 0%;
+    
+}
+
+#potatobody {
+
+    margin-top: 40px;
+    display:flex;
+    top: -20px; 
+
+}
+
+
+
+
+input {
+    overflow: hidden;
+    color: #ffffff;
+    padding: 9px 80px;
+    background-color: rgb(39, 110, 92);
+    border: 4px solid #604e4ecc;
+    border-radius: 50px;
+    cursor:zoom-in;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    margin-top: 40;
+    margin-left: 40;
+}
+
+input:hover {
+    transform: scale(1.5);
+    background-color: #6cdad1cc;
+}
+
+
+h2 {
+
+    font-family: monospace;
+    padding: 0%;
+    margin:0;
+    background: rgb(200, 142, 220);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+.imagewrap {
+    background-image: linear-gradient(141deg, #a52291 0%, #1fc8db 51%, #e08b8b 75%);
+    width: 100%;
+    
+}
+.imagewrap .button1{
+    transform: translate(-90%, 0%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    left: 2rem;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+#pptimg {
+    
+    width:300px; 
+    height:250px;
+    top:0%;
+    transition: width 2s ;
+}
+
+#finalimg{
+    align-items: center;
+    padding:0%;
+    margin-top: 100px;
+    display: flex;
+    top: -20px;
+    right: 0%;
+    margin-top: 30;
+}
+.final{
+
+top:20% ;
+
+height:20%;
+ width:15%;
+}

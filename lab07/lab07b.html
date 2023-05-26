@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <div>
+<html><head><title>registration form</title></head>
+<body>
+    <style>
+        h2{
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(141, 105, 61);
+            -webkit-text-stroke: 2px rgb(255, 255, 255); 
+
+            background-color: rgb(225, 241, 241);
+        }
+        body{
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            justify-content: center;
+            margin: 0;
+        }
+    </style>
+    
+<h2>complete the form :</h2>
+<form action="cgi-bin/lab07.cgi" method="post">
+
+<div class="actions">    
+ Name: 
+ <input type="text" placeholder="First Last" name="name" />
+<br>
+
+<p> Address: </p>
+<input type="text" placeholder="Street" name="Address" >
+<br><br>
+city: 
+<input type="text" placeholder="city" name="city" /><br />
+<br>
+Postal code :
+<input type="text" placeholder="XXX XXX" maxlength="7" name="postalcode" />
+<br>
+<br>
+ Province : <select name="province">
+    <option value="Ontario">Ontario</option>
+    <option value="Quebec">Quebec</option>
+    <option value="Manitoba">Manitoba</option>
+    <option value="BC">British Columbia</option>
+    <option value="Alberta">Alberta</option>
+</select>
+<br>
+<br>
+Phone: <input type="text" placeholder="XXXXXXXXXX" maxlength="10" pattern="\d{10}" name="phone" /><br />
+<br>
+email:<input type="email" placeholder="example@gmail.com" name="email" />
+<br>
+<br>
+<label>Upload a photograph:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+

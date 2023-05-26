@@ -1,0 +1,179 @@
+*{
+   margin:0;
+   padding: 0;
+}
+body{
+    background-image: url(bg.png);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+ .registrationform{
+    width: 800px;
+    background-color: rgba(216, 124, 160, 0.6);
+    margin:auto;
+    color:rgb(167, 56, 56);
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+ }
+
+ .forms{
+    background-color: rgba(216, 124,160,0.6);
+    width: 800px;
+    margin:auto;
+ }
+
+ form{
+    padding:10px;
+ }
+  
+ #names{
+    width:100%;
+    height: 100px;
+ }
+
+ .name{
+    margin-left:25px;
+     margin-top:30px;
+     width:125px;
+     color:white;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ #FirstName{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px; 
+    
+ }
+
+ 
+ #LastName{
+    position: relative;
+    left:438px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding:0 22px;
+    font-size:16px;
+    
+ }
+
+ .firstlabel{
+    position: relative;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 16px;
+    left:203px;
+    top:-46px;
+
+ }
+
+ .lastlabel{
+    position: relative;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 16px;
+    left:222px;
+    top:-46px;
+ }
+
+
+ #address{
+     position: relative;
+     left:200px;
+     top:-37px;
+     line-height:40px;
+     width:480px;
+     border-radius: 6px;
+     padding:0 22px;
+     font-size:16px;
+     color:rgb(202, 44, 44);
+ }
+
+ 
+ 
+
+number{
+    position: relative;
+    left:230px;
+    top:-37px;
+    line-height:40px;
+    width:255px;
+    border-radius: 6px;
+    padding:0 22px;
+    font-size:16px;
+    color:rgb(202, 44, 44);
+    
+}
+
+
+
+
+ .button{
+    background-color: rgb(202, 10, 87);
+    display: block;
+    margin:20px 0px 0px 20px;
+    border-radius: 12px;
+    border:2px solid #dfaa0c;
+    padding: 14px 110px;
+    color:white;
+    cursor:pointer;
+    transition: 0.25px;
+ }
+
+ .button:hover{
+    background-color: rgb(76, 112, 168);
+ }
+
+.how{
+   
+     left:200px;
+     top:-37px;
+     line-height:40px;
+     width:480px;
+    font-family:cursive;
+     padding:0 22px;
+     font-size:26px;
+     color:rgb(0, 0, 0);
+     text-decoration:underline;
+ }
+ textarea{
+    background-color: rgba(216, 124, 160, 0.6);
+    position: relative;
+    left:15px;
+    top:0px;
+    height: 150px;
+    width:40%;
+    border-radius: 20px;
+    padding:0 99px;
+    font-size:26px;
+    color:rgb(0, 0, 0);
+   
+ }
+
+ 
+     
+ table{
+    margin-top : 50px;
+    text-align:center;
+    background: rgb(220, 181, 204);
+    color:rgb(10, 8, 8);
+
+ }
+
+
+.bookmarks{
+    top: 700px;
+    background-color: rgba(214, 77, 129, 0.6);
+}
+
+
+ 

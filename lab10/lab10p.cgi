@@ -1,0 +1,25 @@
+#!/usr/bin/python
+print ("Content-type:text/html\n\n")
+
+import cgi, cgitb
+form = cgi.FieldStorage()
+city = form.getvalue('cityname').upper()
+prov_state = form.getvalue('provincestate').upper()
+country = form.getvalue('countryname').upper()
+photoUrl = form.getvalue('photourl')
+
+print("<html><head>")
+print("<title>Lab10p Nidhi Biswas </title>")
+print("<link rel='preconnect' href='[https://fonts.googleapis.com](https://fonts.googleapis.com/)'>")
+print("<link rel='preconnect' href='[https://fonts.gstatic.com](https://fonts.gstatic.com/)' crossorigin>")
+print("<link href='[https://fonts.googleapis.com/css2?family=sans-serif&display=swap](https://fonts.googleapis.com/css2?family=sans-serif&display=swap)' rel='stylesheet'>")
+print("</head><body>")
+print("<style>body{font-family:'sans-serif';padding:10;margin:0;}</style>")
+print("<p style='text-align:center;'>Lab 10 Nidhi Biswas Python Script</p>")
+print("<h1 style='text-align:center;font-size:50px;background:pink;'> %s, " % city)
+print("%s, " % prov_state)
+print("%s</h1>" % country)
+print("<div>")
+print("<img src='%s' style='width: 80vw;'/>" % photoUrl)
+print("</div>")
+print("</body></html>")

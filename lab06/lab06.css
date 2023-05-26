@@ -1,0 +1,47 @@
+
+body{
+
+    background-color: rgb(248, 179, 227);
+}
+
+h1{
+
+background-color: aliceblue;
+font-family:monospace;
+
+}
+
+
+
+.flagg{
+    height: 209px;
+    width: 28%;
+    size: 50px;
+    margin-bottom: 20px;
+    margin-top: -2000px;
+    right: 100%;
+    margin-left: 50%;
+}
+
+#starr {
+    margin-left: 50%;
+    left: -5px;
+    margin-right:200px;
+
+    
+   
+ }
+
+
+ h2{
+     font-size: xx-large;
+ }
+ p{
+     font-size: xx-large;
+     color: aliceblue;
+     stroke:#000000; 
+     stroke-width:5;
+ }
+
+
+ 
