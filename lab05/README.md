@@ -1,0 +1,2 @@
+Developed an interactive Mr. Potato Head game utilizing drag-and-drop functionality for assembling parts such as body, eyes, nose, mouth, and hat. Incorporated web-based or self-drawn clip art and added a feature to save the creation as an image file (PNG, JPG, GIF). Additionally, implemented a hover function to animate images to fullscreen and a clickable icon to revert them to their original size and position.
+
